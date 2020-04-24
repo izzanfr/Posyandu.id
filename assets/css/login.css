@@ -1,0 +1,126 @@
+body, html {
+    height: 100%;
+    font-family: arial;
+}
+
+input{
+    font-size: 16px;
+    font: Arial;
+    border-bottom: 1px #ddd 250px;
+    border-top: none;
+    border-left: 100px;
+    border-right: none;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    font-family: "Arial";
+}
+
+.loginbox{
+    width: 500px;
+    height: 400px;
+    background: #F099D2;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+    opacity: 0.6;
+
+}
+
+
+.loginbox img{
+    margin-top: -60px;
+    margin-left: 170px;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+}
+
+h1{
+    font-family: arial;
+    font-size: 15px;
+    padding:  0;
+    text-align: center;
+    
+}
+
+.loginbox p{
+    margin: 0;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: bold;
+    padding-bottom: 5px;
+
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fff;
+    color: #B1107A;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #FFE5D9;
+    color: #000; 
+}
+
+.pertama{
+    width: 100%;  
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+    padding: 0px; 
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;  
+}
+
+.logo{
+    width: 100%;
+    margin-top: -550px;
+    margin-left: 50px;
+}

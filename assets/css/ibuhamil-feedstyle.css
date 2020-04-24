@@ -1,0 +1,225 @@
+.bg-ibu{
+  width: 1349px;
+  height: 700px;
+  margin-left: -16px;
+  margin-right: 0px;
+}
+
+.judul{
+	padding-top: -9px;
+	font-size: 25px;
+	padding-left: 20px;
+	color: #283747;
+}
+
+.icon-tlp{
+	width: 80px;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+.notlp{
+	font-size: 20px;
+	margin-top: -30px;
+	padding-left: 80px;
+
+
+}
+
+.texthelp{
+	font-size: 11px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+
+.info-box1{
+	width: 300px;
+    height: 200px;
+    background: white;
+    color: #616A6B;
+    font-family: arial;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px;
+    margin-left: 300px;
+    border-radius: 5px;
+ }
+
+ .info-box2{
+	width: 350px;
+    height: 200px;
+    background: white;
+    color: #616A6B;
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px;
+    margin-left: 210px;
+    border-radius: 5px;
+ }
+
+ .icon-time{
+ 	width: 55px;
+ 	padding-left: 15px;
+ 	padding-top: 12px;
+ }
+
+ .judul2{
+ 	font-size: 25px;
+ 	padding-left: 65px;
+ 	margin-top: -36px;
+ 	color: #283747;
+ }
+
+.senin{
+	font-size: 18px;
+	padding-left: 20px;
+	color: #424949;
+	padding-top: 20px;
+}
+
+.jam{
+	font-family: arial;
+	background: #F5B7B1;
+	color: #424949;
+	font-size: 18px;
+	padding-left: 210px;
+	margin-top: -36px;
+}
+
+.minggu{
+	font-size: 18px;
+	padding-left: 20px;
+	color: #424949;
+}
+
+.libur{
+	font-size: 18px;
+	padding-left: 210px;
+	color: #424949;
+	background: #F5B7B1;
+	margin-top: -36px;
+}
+
+.container{
+	margin-top:	150px;
+	background: #F5B7B1;
+	font-size: 30px;
+	color: #424949;
+	height: 40px;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.menu-pertama{
+	background: #F2F4F4;
+	color: #424949;
+	height: 40px;
+	font-family: arial;
+	font-weight: bold;
+	margin-top:	90px;
+	width: 1286px;
+	height: 970px;
+	margin-left: 35px;
+}
+
+.info1{
+	font-size: 25px;
+	margin-left: 50px;
+	margin-top: -20px;
+	background:#CD5C5C;
+	color: white;
+	width: 565px;
+	padding: 5px;
+	border-radius: 5px
+}
+
+.gmbr{
+	padding-top: 30px;
+	width: 300px;
+}
+
+.keterangan{
+	font-size: 22px;
+}
+
+.keterangan2{
+	font-size: 17px;
+	margin-left: 10px;
+}
+
+.ket{
+	margin-top: 30px;
+	font-size: 20px;
+	background:#A9DFBF;
+	width: 500px;
+	border-radius: 20px;
+	margin-left: 420px;
+}
+
+.menu-kedua{
+	background: #E9F7EF;
+	color: #424949;
+	font-family: arial;
+	font-weight: bold;
+	margin-top:	90px;
+	width: 1286px;
+	height: 520px;
+	margin-left: 35px;
+}
+
+.info2{
+	font-size: 25px;
+	margin-left: 50px;
+	margin-top: -20px;
+	background:#CD5C5C;
+	color: white;
+	width: 450px;
+	padding: 5px;
+	border-radius: 5px
+}
+
+.gmbr2{
+	padding-top: 30px;
+	width: 150px;
+}
+
+.ket2{
+	margin-top: 30px;
+	font-size: 18px;
+	background:#DC7633;
+	color: white;
+	width: 850px;
+	border-radius: 2px;
+	margin-left: 220px;
+	text-align: justify;
+	padding: 5px;
+}
+
+.menu-ketiga{
+	background: #EBDEF0;
+	color: #424949;
+	font-family: arial;
+	font-weight: bold;
+	margin-top:	90px;
+	width: 1286px;
+	height: 520px;
+	margin-left: 35px;
+}
+
+.info3{
+	font-size: 25px;
+	margin-left: 50px;
+	margin-top: -20px;
+	background:#CD5C5C;
+	color: white;
+	width: 520px;
+	padding: 5px;
+	border-radius: 5px
+}

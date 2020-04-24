@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+}
+
+.btn-primary{
+  margin-top: 15px;
+  color: white;
+  background-color: #f099d2;
+  border-radius: 5px;
+  margin-right: 0px;
+  font-family: "Arial";
+}
+
+.btn-primary:hover {background-color: #DF367C}
+
+.btn-primary:active {
+  background-color: #DF367C;
+  transform: translateY(4px);
+}
+
+.container{
+  padding-top: 50px;
+}
+
+.catatan{
+  margin-top: -50px;
+}
+
+.col-h{
+  padding: 40px;
+}
+
+.col-h3{
+  padding-left: 110px;
+}
