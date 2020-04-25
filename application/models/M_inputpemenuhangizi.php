@@ -11,6 +11,7 @@ class M_inputpemenuhangizi extends CI_Model {
     public function tambah_pemenuhangizi($data)
 	{
 		$data= [
+            "id_catatan" => "",
             "username" => $this->input->post('username'),
 			"tanggal" => $this->input->post('tanggal'),
 			"nama_petugas" => $this->input->post('nama_petugas'),

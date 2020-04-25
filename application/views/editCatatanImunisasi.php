@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<link href="<?= base_url() ?>assets/css/formCatatanImunisasi.css" rel="stylesheet">
+	<link href="assets/css/formCatatanImunisasi.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,39 +25,45 @@
   <div class="container">
   <div class="col-h"></div>
     <div>
-      <h3 class="catatan col-h3">Form Catatan Imunisasi</h3>
+      <h3 class="catatan col-h3">Edit Catatan Imunisasi</h3>
     </div>
     <br>
     <div>
     <div class="col-lg-1"></div>
     <div class="col-lg-5 col-isi">
-	     <form action="<?php echo base_url('C_inputimunisasi/tambahimunisasi') ?>" method="post">
+	     <form  action="<?php echo base_url('C_catatanimunisasipetugas/updateimunisasi')?>" method="post">
+       <?php $no = 0;
+            foreach ($pi as $pi) {?>
           <div class="form-group">
             <label>Tgl Pemeriksaan</label>
-            <input type="date" id="datepicker" width="270" name="tanggal"/>
+            <input type="date" id="datepicker" width="270" name="tanggal" />
               <script>
                 $('#datepicker').datepicker({
                 uiLibrary: 'bootstrap'
                 });
               </script>
           </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Username</label>
-            <input type="text" class="form-control" name="username" id="formGroupExampleInput">
-          </div>
   	      <div class="form-group">
     	      <label for="formGroupExampleInput">Nama Petugas Pemeriksa</label>
-    	      <input type="text" class="form-control" name="nama_petugas" id="formGroupExampleInput">
+    	      <input type="text" class="form-control" name="nama_petugas" id="formGroupExampleInput" value="<?php echo $pi['nama_petugas'] ?>" readonly>
   	      </div>
+          <!-- <div class="form-group">
+            <label for="exampleFormControlInput1">ID registrasi</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" disabled>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">NIP</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" disabled>
+          </div> -->
   	      <div class="form-group">
     	      <label for="exampleFormControlInput1">Nama Ibu</label>
-    	      <input type="text" class="form-control" name="nama_ibu" id="formGroupExampleInput">
+    	      <input type="text" class="form-control" name="nama_ibu" id="formGroupExampleInput" value="<?php echo $pi['nama_ibu'] ?>" readonly>
   	      </div>
           <div class="form-group">
             <label for="exampleFormControlSelect1">Umur Anak</label>
-            <select class="form-control" name="umur" id="exampleFormControlSelect1">
-              <option value="0 Bulan"> 0 Bulan</option>
-              <option value="1 Bulan"> 1 Bulan</option>
+            <select class="form-control" id="exampleFormControlSelect1" name="umur">
+              <option value="0 Bulan">0 Bulan</option>
+              <option value="1 Bulan">1 Bulan</option>
               <option value="2 Bulan">2 Bulan</option>
               <option value="3 Bulan">3 Bulan</option>
               <option value="4 Bulan">4 Bulan</option>
@@ -71,23 +77,27 @@
               <option value="12+ Bulan">12+ Bulan</option>
             </select>
           </div>
+          <input type="hidden" name="id_catatan" value="<?php echo $pi['id_catatan'];?>">
           <div class="form-group">
             <label for="exampleFormControlSelect1">Jenis Vaksin Yang Diberikan</label>
-            <select class="form-control" name="vaksin" id="exampleFormControlSelect1">
+            <select class="form-control" id="exampleFormControlSelect1" name="vaksin">
               <option value="HB-0">HB-0</option>
               <option value="BCG">BCG</option>
               <option value="Polio">Polio</option>
-              <option value="DPT-HB-Hib">DPT-HB-Hib 1</option>
+              <option value="DPT-HB-Hib 1">DPT-HB-Hib 1</option>
               <option value="Polio 2">Polio 2</option>
               <option value="DPT-HB-Hib">DPT-HB-Hib 2</option>
               <option value="Polio 3">Polio 3</option>
-              <option value="DPT-HB-Hib">DPT-HB-Hib 3</option>
+              <option value="DPT-HB-Hib 3">DPT-HB-Hib 3</option>
               <option value="Polio 4">Polio 4</option>
               <option value="IPV">IPV</option>
               <option value="Campak">Campak</option>
             </select>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
+          <?php 
+              } 
+          ?>
 	      </form>
 	    </div>
 	    <div class="col-lg-2"></div>

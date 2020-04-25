@@ -56,8 +56,8 @@
                 <th scope="row"><?php echo $pcpgp['vitamin']?></th>
                 <th scope="row"><?php echo $pcpgp['nasihat']?></th>
                 <th>
-                    <button class="btn btn-warning">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
+                <a class="btn btn-warning" href="<?php echo site_url('C_catatanpemenuhangizipetugas/update_cgizi/').$pcpgp['id_catatan'];?>">Edit</a>
+                    <a class="btn btn-danger" href="<?php echo site_url('C_catatanpemenuhangizipetugas/deletegizi/').$pcpgp['id_catatan'];?>" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
                 </th>
             </tr>
             <?php 

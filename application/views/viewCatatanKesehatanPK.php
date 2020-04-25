@@ -56,7 +56,7 @@
             <tr bgcolor="#F8F9F9">
                 <th scope="row"><?php echo $i++?></th>
                 <th scope="row"><?php echo $pckp['tanggal_pemeriksaan']?></th>
-                <th scope="row"><?php echo $pckp['nama_petugas']?></th>
+                <th scope="row"><?php echo $pckp['nama_ibu']?></th>
                 <th scope="row"><?php echo $pckp['keluhan']?></th>
                 <th scope="row"><?php echo $pckp['berat']?></th>
                 <th scope="row"><?php echo $pckp['umur']?></th>
@@ -68,8 +68,8 @@
                 <th scope="row"><?php echo $pckp['nasihat']?></th>
                 <th scope="row"><?php echo $pckp['kapan']?></th>
                 <th>
-                    <button class="btn btn-warning">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
+                    <a class="btn btn-warning" href="<?php echo site_url('C_catatankesehatanpetugas/update_ckesehatan/').$pckp['id_catatan'];?>">Edit</a>
+                    <a class="btn btn-danger" href="<?php echo site_url('C_catatankesehatanpetugas/deletekesehatan/').$pckp['id_catatan'];?>" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
                 </th>
             </tr>
             <?php 

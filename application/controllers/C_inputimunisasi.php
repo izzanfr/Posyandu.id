@@ -18,19 +18,17 @@ class C_inputimunisasi extends CI_Controller {
     public function tambahimunisasi()
     {
         $data= [
+            "id_catatan" => "",
             "username" => $this->input->post('username'),
             "nama_petugas" => $this->input->post('nama_petugas'),
             "umur" => $this->input->post('umur'),
             "tanggal" => $this->input->post('tanggal'),
-            "vaksin" => $this->input->post('vaksin')
+            "vaksin" => $this->input->post('vaksin'),
+            "nama_ibu" => $this->input->post('nama_ibu')
         ];
         $this->M_inputimunisasi->tambah_imunisasi($data);
         redirect('C_catatanimunisasipetugas');
     }  
 
-    public function deleteimunisasi($username)
-    {
-        $this->M_inputimunisasi->hapus_imunisasi($username);
-        redirect('C_catatanimunisasipetugas', 'refresh');
-    }
+    
 }

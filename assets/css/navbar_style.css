@@ -1,0 +1,94 @@
+/*CSS untuk html, tinggi html 100%*/
+html {
+	height: 100%;
+}
+
+/*CSS untuk body,posisi harus relatif dan minimal tinggi 100%, artinya harus 100%*/
+body {
+	margin: 0;
+	position: relative;
+	min-height: 100%;
+	font-family: "Arial";
+}
+
+body, html{
+	height: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+	.bg img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.bg img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 768px) {
+	.bg img {
+		width: 100%;
+	}
+}
+
+
+.row-text{
+	align-content: center;
+	padding-left: 80px;
+}
+
+.nav-top{
+	background-color: #F099D2;
+	max-width: 100%;
+}
+
+.bg{
+	height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.margin-0{
+	margin-left: 0px;
+}
+
+.btn-login{
+	margin-top: 15px;
+	color: white;
+	background-color: #FF4D80 /*#FF616161*/ ;
+	border-radius: 5px;
+	margin-right: 0px;
+	font-family: "Arial";
+}
+
+.btn-login:hover {background-color: #DF367C}
+
+.btn-login:active {
+  background-color: #DF367C;
+  transform: translateY(4px);
+}
+
+.logo-sm{
+	width: 31px;
+	height: 31px;
+	margin-right: 3px;
+}
+
+.padding-1{
+	text-align: justify;
+	padding-left: 5%;
+}
+
+.padding-2{
+	padding-left: 5%;
+	text-align : justify;
+}
+
+.padding-3{
+	padding-left: 5%;
+}

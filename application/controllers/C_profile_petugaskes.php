@@ -11,7 +11,7 @@ class C_profile_petugaskes extends CI_Controller {
  
     public function index() {
         $user = $this->session->userdata('username');
-        $data['profile_petugaskes'] = $this->M_profile_petugaskes->getProfile($user);
+        $data['pki'] = $this->M_profile_petugaskes->getProfile($user);
         $this->load->view('profilPK', $data);
     }
 
@@ -19,12 +19,13 @@ class C_profile_petugaskes extends CI_Controller {
       $data = [
         "nama" => $this->input->post('nama'),
         "alamat" => $this->input->post('alamat'),
-        "no_telp" => $this->input->post('no_telp')
+        "no_telp" => $this->input->post('no_telp'),
+        "jenis_kelamin" => $this->input->post('jenis_kelamin')
       ];
-      if ($this->M_profile_petugaskes->editprofile($_SESSION['username'], $data)){
+      if ($this->M_profile_petugaskes->editprofile($_SESSION['username'], $data)) {
           $data['success'] = "Edit Data Berhasil";
           $this->load->view('profilPK', $data);
       }
-   }
+   }  
 }
 ?>

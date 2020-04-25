@@ -1,12 +1,9 @@
-@media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -21,7 +18,7 @@
 }
 
 .topnav {
-  background-color: white;
+  background-color: #F099D2;
   overflow: hidden;
   margin-left: : 100px;
 }

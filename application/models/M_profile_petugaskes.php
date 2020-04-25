@@ -12,6 +12,7 @@ class M_profile_petugaskes extends CI_Model {
 			"nama" => $this->input->post('nama'),
             "alamat" => $this->input->post('alamat'),
             "no_telp" => $this->input->post('no_telp'),
+            "jenis_kelamin" => $this->input->post('jenis_kelamin')
 		];
 		$this->db->where('username', $username);
         return $this->db->update('profile_pkesehatan', $data);

@@ -50,12 +50,13 @@
             <tr bgcolor="#F8F9F9">
                 <th scope="row"><?php echo $i++?></th>
                 <th scope="row"><?php echo $pcip['tanggal']?></th>
-                <th scope="row"><?php echo $pcip['nama_petugas']?></th>
+                <th scope="row"><?php echo $pcip['nama_ibu']?></th>
                 <th scope="row"><?php echo $pcip['umur']?></th>
                 <th scope="row"><?php echo $pcip['vaksin']?></th>
                 <th>
-                    <button class="btn btn-warning">Edit</button>
-                    <a class="btn btn-danger" href="<?php echo site_url('C_inputimunisasi/deleteimunisasi').$pcip['username'];?>" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
+                    <!-- <button class="btn btn-warning">Edit</button> -->
+                    <a class="btn btn-warning" href="<?php echo site_url('C_catatanimunisasipetugas/update_imunisasi/').$pcip['id_catatan'];?>">Edit</a>
+                    <a class="btn btn-danger" href="<?php echo site_url('C_catatanimunisasipetugas/deleteimunisasi/').$pcip['id_catatan'];?>" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
                 </th>
             </tr>
             <?php 

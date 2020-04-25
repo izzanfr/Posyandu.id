@@ -30,7 +30,18 @@
     <div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5 col-isi">
-          <form action="><?php echo site_url('C_profile_petugaskes/editPetugas')?>" method = 'post'>
+          <form action="<?php site_url('C_profile_petugaskes/editPetugas')?>" method = 'post'>
+            <?php if(isset($error_message)) { ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?= $error_message ?>
+                        </div>
+            <?php } ?>
+            <?php if(isset($success)) { ?>
+                        <div class="alert alert-success" role="alert">
+                            <?= $success ?>
+                        </div>
+            <?php } ?>
+            <input type="hidden" name="username" value="<?php echo $pki['username'];?>">
             <div class="form-group">
               <label for="formGroupExampleInput">NIP</label>
               <input type="text" class="form-control" id="formGroupExampleInput" name ="nip" value ="<?= $data['nip']?>" readonly>

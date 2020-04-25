@@ -18,6 +18,7 @@ class C_inputkesehatan extends CI_Controller {
     public function tambahkesehatan()
     {
         $data= [
+            "id_catatan" => "",
             "username" => $this->input->post('username'),
             "tanggal_pemeriksaan" => $this->input->post('tanggal_pemeriksaan'),
             "nama_petugas" => $this->input->post('nama_petugas'),
