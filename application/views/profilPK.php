@@ -30,7 +30,7 @@
     <div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5 col-isi">
-          <form action="<?php site_url('C_profile_petugaskes/editPetugas')?>" method = 'post'>
+          <form action="<?php site_url('C_profile_petugaskes')?>" method = 'post'>
             <?php if(isset($error_message)) { ?>
                         <div class="alert alert-danger" role="alert">
                             <?= $error_message ?>
@@ -48,7 +48,7 @@
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput">Nama</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" name ="nama" value ="<?= $data['nama']?>">
+              <input type="text" class="form-control" id="formGroupExampleInput" name ="nama" value ="<?= $data['nama']?>" readonly>
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">Username</label>
@@ -60,22 +60,16 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Alamat</label>
-              <input class="form-control" id="exampleFormControlTextarea1" rows="3" name ="alamat" value ="<?= $data['alamat']?>"></input>
+              <input class="form-control" id="exampleFormControlTextarea1" rows="3" name ="alamat" value ="<?= $data['alamat']?>" readonly></input>
             </div>
-            <div class="form-check">
-              <label for="exampleRadios1">Jenis Kelamin</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios2" value="Laki-laki">
-              <label class="form-check-label" for="exampleRadios1">Laki-laki</label>
-              <input class="form-check-input" type="radio" name="jenis_kelamin" id="exampleRadios3" value="Perempuan">
-              <label class="form-check-label" for="exampleRadios2">Perempuan</label>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Jenis Kelamin</label>
+              <input class="form-control" id="exampleFormControlTextarea1" rows="3" name ="jenis_kelamin" value ="<?= $data['jenis_kelamin']?>" readonly></input>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput">No. Telepon</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" name ="no_telp" value="<?= $data['no_telp']?>">
+              <input type="text" class="form-control" id="formGroupExampleInput" name ="no_telp" value="<?= $data['no_telp']?>" readonly>
             </div>
-            <button type="submit" class="btn btn-primary">Edit</button>
           </form>
         </div>
         <div class="col-lg-4"></div>

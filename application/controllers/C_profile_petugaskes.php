@@ -13,19 +13,6 @@ class C_profile_petugaskes extends CI_Controller {
         $user = $this->session->userdata('username');
         $data['pki'] = $this->M_profile_petugaskes->getProfile($user);
         $this->load->view('profilPK', $data);
-    }
-
-    public function editPetugas() {
-      $data = [
-        "nama" => $this->input->post('nama'),
-        "alamat" => $this->input->post('alamat'),
-        "no_telp" => $this->input->post('no_telp'),
-        "jenis_kelamin" => $this->input->post('jenis_kelamin')
-      ];
-      if ($this->M_profile_petugaskes->editprofile($_SESSION['username'], $data)) {
-          $data['success'] = "Edit Data Berhasil";
-          $this->load->view('profilPK', $data);
-      }
-   }  
+    }  
 }
 ?>
