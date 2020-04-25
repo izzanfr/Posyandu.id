@@ -5,13 +5,13 @@ class C_catatanimunisasipetugas extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-        $this->load->model('M_catatanimunisasi');
+        $this->load->model('M_catatanimunisasipetugas');
         $this->load->library('session');
     }
  
     public function index() {
         $user = $this->session->userdata('username');
-        $data['profile_catatanimunisasipetugas'] = $this->M_catatanimunisasi->getCatatanimunisasi($user);
+        $data['profile_catatanimunisasipetugas'] = $this->M_catatanimunisasipetugas->getCatatanimunisasi($user);
         $this->load->view('viewCatatanImunisasiPK', $data);
     }  
 }

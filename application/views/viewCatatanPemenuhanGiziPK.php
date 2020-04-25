@@ -40,6 +40,7 @@
                 <th scope="col">Umur Anak</th>
                 <th scope="col">Vitamin Yang Diberikan</th>
                 <th scope="col">Nasihat Pemenuhan Gizi Oleh Petugas Kesehatan</th>
+                <th scope="col">Aksi</th>
             </tr>
             </thead>
             <tbody>
@@ -54,6 +55,10 @@
                 <th scope="row"><?php echo $pcpgp['umur']?></th>
                 <th scope="row"><?php echo $pcpgp['vitamin']?></th>
                 <th scope="row"><?php echo $pcpgp['nasihat']?></th>
+                <th>
+                    <button class="btn btn-warning">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </th>
             </tr>
             <?php 
                 } 

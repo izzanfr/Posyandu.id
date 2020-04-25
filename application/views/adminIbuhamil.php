@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Admin | Posyandu</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="<?php echo base_url()?>assets/css/adminIbuhamil.css">
     <script type="text/javascript" src="<?php echo base_url()?>assets/js/menu.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">    
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 
 </head>
 </head>
@@ -36,12 +41,12 @@
             <div class="col-lg-10">
             <br>
             <br>
-            <input type="text" placeholder="Cari.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <!-- <input type="text" placeholder="Cari.." name="search"> -->
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
             <a class="btn btn-primary" href="<?= base_url('C_admibuhamil/tambah')?>"> Tambah Data </a>
             <br>
             <br>
-            <table class="table table-striped table-dark table-bordered">
+            <table class="table table-striped table-dark table-bordered" id="table">
             <thead>
             <tr bgcolor='#F5B7B1'>
                 <th scope="col">No.</th>
@@ -85,6 +90,10 @@
     </div>
     </div>
     </section>
-
 </body>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('#table').DataTable();
+    });
+</script>
 </html>

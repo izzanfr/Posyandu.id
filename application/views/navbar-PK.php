@@ -28,9 +28,9 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Input Data Ibu Hamil
             <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Catatan Kesehatan</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Catatan Pemenuhan Gizi</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Catatan Imunisasi</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= base_url().'C_inputkesehatan'?>">Catatan Kesehatan</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= base_url().'C_inputpemenuhangizi'?>">Catatan Pemenuhan Gizi</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="<?= base_url().'C_inputimunisasi'?>">Catatan Imunisasi</a></li>
                 </ul>
             </li>
             <li><a href="<?= base_url() ?>C_logout/logout">Logout</a></li>

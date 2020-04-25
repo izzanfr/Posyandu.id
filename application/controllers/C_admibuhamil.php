@@ -20,14 +20,8 @@ class C_admibuhamil extends CI_Controller {
     }
 
     public function update($username) {
-        $user = $this->session->userdata('username');
-        $data['profile_ibuhamil'] = $this->M_ibuhamil->profile_ibuhamil($user);
+        $data['ph']= $this->M_ibuhamil->profile_ibuhamil($username);
         $this->load->view('editProfilIH', $data);
-        // $profile = $this->M_ibuhamil->profile_ibuhamil($username);
-        // $this->load->view('editProfilIH',['data'=>$profile]);
-        //$this->session->set_userdata('akun','$username');
-        //echo $username;
-        //$this->load->view('editProfilIH');
     }
 
     public function tambahibuhamil()
@@ -61,9 +55,6 @@ class C_admibuhamil extends CI_Controller {
             "kehamilan_ke" => $this->input->post('kehamilan_ke'),
             "no_telp" => $this->input->post('no_telp')
         ];
-        // if ($this->M_ibuhamil->edit_ibuhamil($_SESSION['username'], $data)){
-        //       $data['success'] = "Edit Data Berhasil";
-        //       redirect('C_admibuhamil');
         $this->M_ibuhamil->update_ibuhamil($this->input->post('username'), $data);
         redirect('C_admibuhamil');
     }

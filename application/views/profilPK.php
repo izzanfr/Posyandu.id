@@ -33,7 +33,7 @@
           <form action="><?php echo site_url('C_profile_petugaskes/editPetugas')?>" method = 'post'>
             <div class="form-group">
               <label for="formGroupExampleInput">NIP</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" name ="nip" value ="<?= $data['nip']?>" disabled>
+              <input type="text" class="form-control" id="formGroupExampleInput" name ="nip" value ="<?= $data['nip']?>" readonly>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput">Nama</label>
@@ -41,11 +41,11 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlInput1">Username</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" name ="username" value ="<?= $data['username']?>" disabled>
+              <input type="text" class="form-control" id="formGroupExampleInput" name ="username" value ="<?= $data['username']?>" readonly>
             </div>
             <div class="form-group">
               <label for="inputPassword">Password</label>
-                <input type="text" class="form-control" id="inputPassword" name ="password" value ="<?= $data['password']?>" disabled>
+                <input type="text" class="form-control" id="inputPassword" name ="password" value ="<?= $data['password']?>" readonly>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Alamat</label>

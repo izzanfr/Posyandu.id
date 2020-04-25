@@ -45,6 +45,7 @@
                 <th scope="col">Hasil Pemeriksaan Laboratorium</th>
                 <th scope="col">Nasihat Yang Disampaikan</th>
                 <th scope="col">Kapan Harus Kembali</th>
+                <th scope="col">Aksi</th>
             </tr>
             </thead>
             <tbody>
@@ -66,6 +67,10 @@
                 <th scope="row"><?php echo $pckp['hasil']?></th>
                 <th scope="row"><?php echo $pckp['nasihat']?></th>
                 <th scope="row"><?php echo $pckp['kapan']?></th>
+                <th>
+                    <button class="btn btn-warning">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </th>
             </tr>
             <?php 
                 } 

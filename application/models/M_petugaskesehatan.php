@@ -16,8 +16,8 @@ class M_petugaskesehatan extends CI_Model {
         $this->db->select('alamat');
         $this->db->select('jenis_kelamin');
         $this->db->select('no_telp');
-        $this->db->where('username', $username);
         $this->db->from('profile_pkesehatan');
+        $this->db->where('username', $username);
         $query = $this->db->get();
         return $query->result_array();
     }

@@ -12,7 +12,7 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<!-- <link href="assets/css/formDaftarIH.css" rel="stylesheet"> -->
-  <link href="assets/css/profilIH.css" rel="stylesheet">
+  <link href="<?php echo base_url()?>assets/css/profilIH.css" rel="stylesheet">
   <script type="text/javascript" src="assets/js/menu.js"></script>
 </head>
 

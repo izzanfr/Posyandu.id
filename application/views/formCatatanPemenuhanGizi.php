@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
-  <link href="assets/css/formCatatanPemenuhanGizi.css" rel="stylesheet">
+  <link href="<?php echo base_url()?>assets/css/formCatatanPemenuhanGizi.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,10 +31,10 @@
   <div>
   <div class="col-lg-1"></div>
   <div class="col-lg-5 col-isi">
-    <form>
+    <form action="<?php echo base_url('C_inputpemenuhangizi/tambahpemenuhangizi') ?>" method="post">
       <div class="form-group">
         <label>Tgl Pemeriksaan</label>
-        <input type="date" id="datepicker" width="270" />
+        <input type="date" id="datepicker" width="270" name="tanggal"/>
           <script>
             $('#datepicker').datepicker({
               uiLibrary: 'bootstrap'
@@ -42,38 +42,34 @@
           </script>
       </div>
       <div class="form-group">
+        <label for="formGroupExampleInput">Username</label>
+        <input type="text" class="form-control" name="username" id="formGroupExampleInput">
+      </div>
+      <div class="form-group">
         <label for="formGroupExampleInput">Nama Petugas Pemeriksa</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
+        <input type="text" class="form-control" name="nama_petugas" id="formGroupExampleInput">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Nama Ibu</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
+        <input type="text" class="form-control" name="nama_ibu" id="formGroupExampleInput">
       </div>
       <div class="form-group">
-            <label for="exampleFormControlInput1">ID registrasi</label>
-            <input type="text" class="form-control" id="formGroupExampleInput">
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">NIP</label>
-            <input type="text" class="form-control" id="formGroupExampleInput">
-          </div>
-      <div class="form-group">
         <label for="exampleFormControlSelect1">Umur Anak</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>6-11 Bulan</option>
-            <option>1-2 Tahun</option>
-            <option>2-3 Tahun</option>
-            <option>3-4 Tahun</option>
-            <option>4-5 Tahun</option>
+          <select class="form-control" name="umur" id="exampleFormControlSelect1">
+            <option value="6-11 Bulan">6-11 Bulan</option>
+            <option value="1-2 Tahun">1-2 Tahun</option>
+            <option value="2-3 Tahun">2-3 Tahun</option>
+            <option value="3-4 Tahun">3-4 Tahun</option>
+            <option value="4-5 Tahun">4-5 Tahun</option>
           </select>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Vitamin Yang Diberikan</label>
-        <input type="text" class="form-control" id="formGroupExampleInput">
+        <input type="text" class="form-control" name="vitamin" id="formGroupExampleInput">
       </div>
       <div class="form-group">
         <label for="exampleFormControlTextarea1">Nasihat Pemenuhan Gizi Oleh Tenaga Kesehatan</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" name="nasihat" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>

@@ -36,9 +36,10 @@
             <tr bgcolor='#F5B7B1'>
                 <th scope="col">No.</th>
                 <th scope="col">Tgl Pemeriksaan</th>
-                <th scope="col">Nama Petugas</th>
+                <th scope="col">Nama Ibu</th>
                 <th scope="col">Umur Anak</th>
                 <th scope="col">Jenis Vaksin Yang Diberikan</th>
+                <th scope="col">Aksi</th>
             </tr>
             </thead>
             <tbody>
@@ -52,6 +53,10 @@
                 <th scope="row"><?php echo $pcip['nama_petugas']?></th>
                 <th scope="row"><?php echo $pcip['umur']?></th>
                 <th scope="row"><?php echo $pcip['vaksin']?></th>
+                <th>
+                    <button class="btn btn-warning">Edit</button>
+                    <a class="btn btn-danger" href="<?php echo site_url('C_inputimunisasi/deleteimunisasi').$pcip['username'];?>" onclick="return confirm('Apakah Anda Yakin?')">Delete</a>
+                </th>
             </tr>
             <?php 
                 } 

@@ -20,16 +20,10 @@ class C_admpetugaskesehatan extends CI_Controller {
     }
 
     public function update_petugaskesehatan($username) {
-        $user = $this->session->userdata('username');
-        $data['profile_pkesehatan'] = $this->M_petugaskesehatan->profile_pkesehatan($user);
+        $data['pk']= $this->M_petugaskesehatan->profile_petugaskesehatan($username);
         $this->load->view('editProfilPK', $data);
-        // $profile = $this->M_ibuhamil->profile_ibuhamil($username);
-        // $this->load->view('editProfilIH',['data'=>$profile]);
-        //$this->session->set_userdata('akun','$username');
-        //echo $username;
-        //$this->load->view('editProfilIH');
     }
-
+    
     public function tambahpetugaskesehatan()
 	{
 		$data= [
@@ -52,7 +46,7 @@ class C_admpetugaskesehatan extends CI_Controller {
 		redirect('C_admpetugaskesehatan');
     }
     
-    public function updateibuhamil() {
+    public function updatepkesehatan() {
         $data = [
 			"nama" => $this->input->post('nama'),
             "alamat" => $this->input->post('alamat'),
@@ -60,11 +54,8 @@ class C_admpetugaskesehatan extends CI_Controller {
             "kehamilan_ke" => $this->input->post('kehamilan_ke'),
             "no_telp" => $this->input->post('no_telp')
         ];
-        // if ($this->M_ibuhamil->edit_ibuhamil($_SESSION['username'], $data)){
-        //       $data['success'] = "Edit Data Berhasil";
-        //       redirect('C_admibuhamil');
-        $this->M_ibuhamil->update_ibuhamil($this->input->post('username'), $data);
-        redirect('C_admibuhamil');
+        $this->M_petugaskesehatan->update_pkesehatan($this->input->post('username'), $data);
+        redirect('C_admpetugaskesehatan');
     }
 
     public function deletepetugaskesehatan($username)

@@ -17,8 +17,8 @@ class M_ibuhamil extends CI_Model {
         $this->db->select('ttl');
         $this->db->select('kehamilan_ke');
         $this->db->select('no_telp');
-        $this->db->where('username', $username);
         $this->db->from('profile_ibuhamil');
+        $this->db->where('username', $username);
         $query = $this->db->get();
         return $query->result_array();
     }

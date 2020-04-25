@@ -5,13 +5,13 @@ class C_catatanpemenuhangizipetugas extends CI_Controller {
 
     function __construct(){
         parent::__construct();
-        $this->load->model('M_catatanpemenuhangizi');
+        $this->load->model('M_catatanpemenuhangizipetugas');
         $this->load->library('session');
     }
  
     public function index() {
         $user = $this->session->userdata('username');
-        $data['profile_catatanpemenuhangizipetugas'] = $this->M_catatanpemenuhangizi->getCatatanpemenuhangizi($user);
+        $data['profile_catatanpemenuhangizipetugas'] = $this->M_catatanpemenuhangizipetugas->getCatatanpemenuhangizi($user);
         $this->load->view('viewCatatanPemenuhanGiziPK', $data);
     }
 }
