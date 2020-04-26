@@ -18,7 +18,7 @@
 	
 		<nav>
     <div class="topnav">
-	     <img src=<?php echo base_url()?>"assets/pictures/logonew6.png" alt="" class="img-logo">
+	     <img src="<?php echo base_url()?>assets/pictures/logonew6.png" alt="" class="img-logo">
 	     <ul>
 		      <li><a href="<?= base_url('C_profile_ih')?>">Profile</a></li>
 		      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Lihat Data Ibu Hamil

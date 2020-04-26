@@ -60,10 +60,11 @@ body, html{
 .btn-login{
 	margin-top: 15px;
 	color: white;
-	background-color: #FF4D80 /*#FF616161*/ ;
+	background-color: #f099d2 /*#FF616161*/ ;
 	border-radius: 5px;
 	margin-right: 0px;
 	font-family: "Arial";
+	padding: 10px;
 }
 
 .btn-login:hover {background-color: #DF367C}

@@ -31,7 +31,6 @@
     </div>
 
   <div class="container">
-  <div class="col-h"></div>
     <div>
       <h3 class="col-h3">Form Pendaftaran Akun Ibu Hamil</h3>
     </div>

@@ -18,10 +18,11 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bgcolor navbar-static-top navbar-fixed-top">
 			<div class="col-12">
 				<div class="col-md-11">
-					<a href=""><img src="<?php echo base_url()?>assets/pictures/logonavbarr.png" alt=""></a>
+					<!-- <a href=""><img src="<?php echo base_url()?>assets/pictures/logonavbarr.png" alt=""></a> --><a href=""></a>
 				</div>
 				<div class="col-md-1">
-					<a class="btn login" href="<?php echo site_url('C_userlogin')?>">Login</a>
+					<br><br>
+					<a class="btn-login" href="<?php echo site_url('C_userlogin')?>">Login</a>
 					<!-- <button class="btn-login">Login</button> -->
 				</div>
 			</div>
